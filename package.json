@@ -1,0 +1,40 @@
+{
+  "name": "FrontRuning",
+  "version": "1.0.0",
+  "description": "FrontRuns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheerUpButterCup/FrontRuning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CheerUpButterCup/FrontRuning/issues"
+  },
+  "homepage": "https://github.com/CheerUpButterCup/FrontRuning#readme",
+  "dependencies": {
+    "@uniswap/sdk": "^3.0.3",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "axios": "^0.21.1",
+    "bnc-sdk": "^3.0.0",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "envfile": "^6.14.0",
+    "ethers": "^5.0.24",
+    "fractional": "^1.0.0",
+    "fs": "0.0.1-security",
+    "jsdom": "^16.4.0",
+    "mongodb": "^3.6.3",
+    "mysql": "^2.18.1",
+    "terminal-link": "^2.1.1",
+    "trie-prefix-tree": "^1.5.1",
+    "web3": "^1.3.1",
+    "ws": "^7.4.2"
+  }
+}

@@ -1,6 +1,6 @@
 # FrontRuning
 
-Extremely outdated frontrunning bot, do not use.
+Extremely outdated frontrunning bot, would not work anymore
 
 old description:
 

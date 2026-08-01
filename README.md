@@ -25,7 +25,9 @@ Orchestrated by `index.js`.
 
 Every pending transaction is a decision with an expiry. Once the target lands, the opportunity is gone, so all filtering and modelling has to complete in the gap between seeing a transaction and it being mined.
 
-Most pending transactions are irrelevant. The cheap rejection path matters more than the expensive evaluation path, so filtering runs first: a trie over token addresses indexed from a local database gives fast prefix matching to determine whether a transaction touches anything worth looking at, before any pool data is fetched or any modelling is done.
+Most pending transactions are irrelevant, and some are traps. Honeypot tokens are contracts written to let a bot buy and then prevent it selling, and they exist precisely to catch automated buyers that act without a human reviewing the token first.
+
+Execution is therefore gated behind an allowlist of vetted token addresses. A trie over those addresses makes the lookup cheap enough to sit in the hot path, so every pending transaction is checked against the allowlist before any pool data is fetched or any modelling is done. The filter is a safety control first and a performance optimisation second.
 
 ### Sizing the trade
 
